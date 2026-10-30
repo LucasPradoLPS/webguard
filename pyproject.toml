@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "webguard"
+version = "1.0.0"
+description = "Passive web security posture scanner: headers, cookies and TLS"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+webguard = "webguard.cli:main"
+
+[tool.setuptools]
+packages = ["webguard"]
